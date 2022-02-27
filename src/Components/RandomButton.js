@@ -1,10 +1,10 @@
 import React from 'react';
 
-const RandomButton = ({handleQuote}) => {
+const RandomButton = ({handleQuote, color}) => {
     return (
-        <div>
-            <button onClick={handleQuote}> siguiente</button>
-        </div>
+        
+            <button onClick={handleQuote} className='button' style={{color:color}}> Next </button>
+        
     );
 };
 

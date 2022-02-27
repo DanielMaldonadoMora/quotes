@@ -20,7 +20,8 @@ const Quotes = () => {
     return (
         <div className='box'>
           <p className='quote' style={{color:background}}>"{quote.quote}"</p>
-          <RandomButton handleQuote={handleQuote} className='button'/>
+          <p className='author' style={{color:background}}>"{quote.author}"</p>
+          <RandomButton handleQuote={handleQuote} color={background}/>
         </div>
     );
 };
